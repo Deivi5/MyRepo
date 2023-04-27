@@ -23,5 +23,5 @@ jobs:
           subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION }}
           scope: subscription
           region: northeurope
-          parameters: webAppName=${{ env.targetEnv }}
+          parameters: webAppName=uNamedevops-${{ env.targetEnv }}
           template: ./Bicep-Templates/main.bicep
