@@ -1,0 +1,17 @@
+{
+  "folders": [
+	{
+		"name": "Bicep-Templates",
+		"path": "../../Downloads/GitHub-DevOps-starter-files/Bicep-Templates"
+	},
+	{
+		"name": "MyRepo",
+		"path": "."
+	},
+	{
+		"name": "Application",
+		"path": "../../Downloads/GitHub-DevOps-starter-files/Application"
+	}
+],
+  "settings": {}
+}
