@@ -19,4 +19,4 @@ jobs:
           subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION }}
           scope: subscription
           region: northeurope
-          template: ./Bicep-Template/main.bicep
+          template: ./Bicep-Templates/main.bicep
