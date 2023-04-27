@@ -2,7 +2,8 @@ on: [push, workflow_dispatch]
 name: Azure ARM
 
 env:
-  targetEnv: test
+  targetEnv: prod
+  uniqueName: uName
 
 jobs:
   build-and-deploy:
@@ -23,5 +24,5 @@ jobs:
           subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION }}
           scope: subscription
           region: northeurope
-          parameters: webAppName=uNamedevops-${{ env.targetEnv }}
+          parameters: webAppName=${{ env.uniqueName }}devops-${{ env.targetEnv }}
           template: ./Bicep-Templates/main.bicep
